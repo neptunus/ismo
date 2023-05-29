@@ -1,0 +1,54 @@
+/**
+  Making body take up 100% width and height in the document.
+  Further reading at https://stackoverflow.com/a/38908284
+*/
+html {
+  width: 100%;
+  height: 100%;
+  display: table;
+
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  display: table-cell;
+}
+html, 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+}
+
+/**
+  Box model
+*/
+*, 
+*::before, 
+*::after { box-sizing: inherit; }
+html { box-sizing: border-box; }
+
+/**
+  Typesetting
+*/
+body {
+  font-family: 'Avenir Next', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  font-size: 110%;
+}
+
+/**
+  Focus
+*/
+:focus {
+  outline: 2px solid transparent;
+}
+
+/**
+  Misc.
+*/
+button { line-height: 1.6; }

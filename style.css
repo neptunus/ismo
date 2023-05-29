@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Italiana';
+  src: url('./fonts/italiana-regular-webfont.woff2') format('woff2'),
+       url('./fonts/italiana-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Italianno';
+  src: url('./fonts/italianno-regular-webfont.woff2') format('woff2'),
+       url('./fonts/italianno-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+main {
+  max-width: 66ch;
+  margin-inline: auto;
+  padding-block: 5rem;
+}
+
+main > section {
+  padding-inline: 1.5em;
+}
+
+p, h1, h2, h3, h4 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+p {
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+}
+
+h2, h3, h4 {
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  font-size: 1.2em;
+  margin-left: -0.6em;
+}
+
+h2 + *,
+h3 + *,
+h4 + * {
+  margin-top: 1em;
+}
+
+button {
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: normal;
+  font-size: 1.2em;
+  display: inline-block;
+/*  margin-inline-start: 2em;*/
+  line-height: 1.1;
+}
+
+.callout {
+  display: block;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  line-height: 1;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logomark {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.logomark h1 {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.logomark p {
+  font-size: var(--font-size, 1.4rem);
+  text-align: center;
+  margin-top: -0.75rem;
+}
+
+.logomark.fancy p {
+  font-family: var(--font-family, inherit);
+  letter-spacing: unset;
+}
+
+.fonts-loaded .logomark h1 {
+  font-family: Italiana;
+}
+
+.fonts-loaded .logomark.fancy p {
+  --font-family: Italianno;
+  --font-size: 2.2rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack > * + * {
+  margin-top: 1em;
+}
+
+figure {
+  background-color: aliceblue;
+}
+
+.bg-white {
+  background-color:  white;
+}
+
+span.phone {
+  font-variant-numeric: oldstyle-nums;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  list-style: square;
+}
+

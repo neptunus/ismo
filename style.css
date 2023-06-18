@@ -30,10 +30,10 @@ body {
 }
 
 a {
-  color: var(--link-default-color);
+  color: var(--link-default-color, revert);
 }
 a:visited {
-  color: var(--link-visited-color);
+  color: var(--link-visited-color, revert);
 }
 
 main {

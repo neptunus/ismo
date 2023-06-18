@@ -16,8 +16,24 @@
   font-display: swap;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #181818;
+    --text-color: white;
+    --link-default-color: rgb(81, 177, 255);
+    --link-visited-color: rgb(231, 53, 201);
+  }
+}
+
 body {
-  background-color: #fafafa;
+  background-color: var(--background-color, #fafafa);
+}
+
+a {
+  color: var(--link-default-color);
+}
+a:visited {
+  color: var(--link-visited-color);
 }
 
 main {
@@ -68,7 +84,7 @@ strong {
   display: inline-block;
   font-weight: 400;
   line-height: 1.1;
-  border-left: 4px solid black;
+  border-left: 4px solid var(--text-color, black);
   padding-left: 16px;
 }
 
@@ -132,9 +148,9 @@ figure {
   background-color: aliceblue;
 }
 
-.bg-white {
+/* .bg-white {
   background-color:  white;
-}
+} */
 
 span.phone {
   font-variant-numeric: oldstyle-nums;

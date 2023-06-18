@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 /**
   Making body take up 100% width and height in the document.
   Further reading at https://stackoverflow.com/a/38908284

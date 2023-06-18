@@ -1,4 +1,4 @@
-if ('fonts' in document) {
+if ('fonts' in document && !document.documentElement.classList.contains('fonts-loaded')) {
   Promise.all([
     document.fonts.load('1em Italiana'),
     document.fonts.load('1em Italianno'),

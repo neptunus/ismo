@@ -16,8 +16,13 @@
   font-display: swap;
 }
 
+:root {
+  --alert-color: #7F6C23;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
+    --alert-color:  #c7a831;
     --background-color: #181818;
     --text-color: white;
     --link-default-color: rgb(81, 177, 255);
@@ -162,5 +167,18 @@ ul {
 
 li {
   list-style: square;
+}
+
+aside.banner {
+  border: 5px double var(--alert-color, black);
+  padding: 0.5em 1em;
+  max-width: 100%;
+  margin-inline: 1rem;
+  background-clip: padding-box;
+  background-color:  #B3A77920;
+}
+
+time {
+  font-weight: bold;
 }
 

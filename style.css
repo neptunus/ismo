@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Italiana';
-  src: url('./fonts/italiana-regular-webfont.woff2') format('woff2'),
-       url('./fonts/italiana-regular-webfont.woff') format('woff');
+  src: url('./fonts/italiana-regular-logotype.woff2') format('woff2'),
+       url('./fonts/italiana-regular-logotype.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,11 +9,12 @@
 
 @font-face {
   font-family: 'Italianno';
-  src: url('./fonts/italianno-regular-webfont.woff2') format('woff2'),
-       url('./fonts/italianno-regular-webfont.woff') format('woff');
+  src: url('./fonts/italianno-regular-logotype.woff2') format('woff2'),
+       url('./fonts/italianno-regular-logotype.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  size-adjust: 155%;
 }
 
 :root {
@@ -112,6 +113,7 @@ img {
   display: inline-flex;
   align-self: center;
   flex-direction: column;
+  row-gap: 0.5em;
 }
 
 .logomark h1 {
@@ -127,7 +129,7 @@ img {
 }
 
 .logomark.fancy p {
-  font-family: var(--font-family, inherit);
+  font-family: Italianno, cursive;
   letter-spacing: unset;
 }
 
@@ -136,8 +138,7 @@ img {
 }
 
 .fonts-loaded .logomark.fancy p {
-  --font-family: Italianno;
-  --font-size: 2.2rem;
+  line-height: 1.5em;
 }
 
 .stack {

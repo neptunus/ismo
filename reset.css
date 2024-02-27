@@ -46,13 +46,6 @@ body {
 }
 
 /**
-  Focus
-*/
-:focus {
-  outline: 2px solid transparent;
-}
-
-/**
   Misc.
 */
 button { line-height: 1.6; }

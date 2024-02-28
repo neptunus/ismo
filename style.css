@@ -4,7 +4,7 @@
        url('./fonts/italiana-regular-logotype.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  size-adjust: 105%;
 }
 
 @font-face {
@@ -13,7 +13,6 @@
        url('./fonts/italianno-regular-logotype.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
   size-adjust: 155%;
 }
 
@@ -117,9 +116,11 @@ img {
 }
 
 .logomark h1 {
+  transform: translateY(0.04em);
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
+  letter-spacing: -0.04em;
 }
 
 .logomark p {
@@ -129,15 +130,18 @@ img {
 }
 
 .logomark.fancy p {
-  font-family: Italianno, cursive;
+  font-family: cursive;
   letter-spacing: unset;
 }
 
 .fonts-loaded .logomark h1 {
   font-family: Italiana;
+  transform: initial;
+  letter-spacing: unset;
 }
 
 .fonts-loaded .logomark.fancy p {
+  font-family: Italianno;
   line-height: 1.5em;
 }
 

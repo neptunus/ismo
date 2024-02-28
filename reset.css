@@ -1,5 +1,6 @@
 :root {
   color-scheme: light dark;
+  --font-stack: 'Avenir Next', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /**
@@ -39,10 +40,14 @@ html { box-sizing: border-box; }
   Typesetting
 */
 body {
-  font-family: 'Avenir Next', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: var(--font-stack);
   letter-spacing: 0.2px;
   line-height: 1.4;
   font-size: 110%;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-stack);
 }
 
 /**
